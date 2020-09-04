@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body
+        {
+            background-color: rgb(246, 175, 88);
+        }
+        *
+        {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            font-size: 20px;
+            text-align: center;
+            
+        }
+
+        div{
+            padding: 8px;
+        }
+      
+        label
+        {
+            width: 120px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+       
+        form{
+            border: rgba(93, 92, 90, 0) solid 2px;
+            padding: 20px;
+    
+            width: 320px;
+            height: 390px;
+
+            position:absolute;
+
+            margin: auto;
+            top: 0px;bottom: 0;left: 0;right: 0;;
+            box-shadow: 0 0 8px 5px #6E6E6E;
+            background-color: rgb(211, 211, 211);
+            border-radius: 10px;
+        
+            
+        }
+       
+        input
+        {
+         border-radius: 4px;
+         outline: none;   
+        }
+        .form-control
+        {
+            outline: none;
+            
+            
+        }
+
+        .form-control:focus
+        {
+            box-shadow: 0 0 10px 1px rgb(56, 56, 56);
+        }
+
+        textarea:focus
+        {
+            box-shadow: 0 0 7px 5px #6E6E6E;
+        }
+        textarea
+        {
+            width: 165px;
+            height: 100px;
+            resize:none;
+            outline: none;
+        }
+
+        .btn
+        {
+            width: 80px;
+            height: 30px;
+           font-family: Arial, Helvetica, sans-serif;
+            color: white;
+           border-radius: 4px;
+           cursor: pointer;
+           outline: none;
+        }
+
+        .btn:hover
+        {
+            box-shadow: 0 0 7px 3px #6E6E6E;
+        }
+        .btn-submit
+        {
+            margin-top: 30px;
+            background-color: green;
+            box-shadow: 0 0 7px 2px #6E6E6E;
+        }
+        .btn-clear
+        {
+            background-color: red;
+            box-shadow: 0 0 7px 2px #6E6E6E;
+            margin-left: 4px;
+        }
+
+        #birthday
+        {
+            display: inline-block;
+            width: 165px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <form action="">
+        <h1>REGISTER</h1>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input class="form-control" id="first-name" type="text" placeholder="First Name">
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input class="form-control" id="last-name" type="text" placeholder="Last Name">
+        </div>
+
+        <div class="form-group">
+            <label for="Age">Age</label>
+            <input class="form-control" id="Age" type="number" placeholder="Age">
+        </div>
+
+        <div class="form-group">
+            <label for="birthday">Birthday</label>
+            <input class="form-control" id="birthday" type="date" >
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <textarea  id="address" cols="30" rows="10" placeholder="address"></textarea>
+            
+        </div>
+
+        <div class="form-group">
+            <label for=""></label>
+            <input type="submit" class="btn btn-submit" value="Register">
+            <input type="reset" class="btn btn-clear" value="Clear">
+        </div>
+
+
+    </form>
+</body>
+</html>
