@@ -1,1 +1,0 @@
-# vaibhaveric.github.io
